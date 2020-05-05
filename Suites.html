@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> 
 
-<!--O link abaixo com as  fontes do  google foi obtido no  site: (https://materializecss.com/getting-started.html) HTML Setup -->
+
+    <!-- ########################################## Inicio dependências #######################################-->
+
+<!--O link abaixo contém todas as fontes do google, e as fontes estão disponíveis no link : (https://materializecss.com/getting-started.html) HTML Setup -->
      <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
@@ -13,24 +16,37 @@
 <!--O link abaixo com o css foi obtido no  site: (https://materializecss.com/getting-started.html) HTML Setup -->
      <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
- 
+
+
  <!--O link abaixo foi incluido para associar as regras criadas na pasta css/style.css no HTML5 -->
  <link rel="stylesheet" href="css/style.css" />
+
+   <!-- ######################################### fim dependências #######################################-->
 </head>
+
+
+
+<!-- ############################################ Inicio body#######################################-->
 <body>
 
  <!-- o header foi criado para conter  h1 com logo, barra de navegação com os links: Hotel Togo Palace,Hotel ,Suites,Gastronomia, reservas e Localização -->
+   
     <header> 
+
 <!-- h1 foi criado para incluir a imagem contendo o logo do Hotel Togo Palace-->
 <h1> 
+
 <!-- Foi incluido o caminho da imagem (img src="img/logo3.png")  e (alt) é a descrição da imagem e (class="logo") está associado as regras criadas em (header .logo) no css  -->
 <img src="img/logo3.png" alt="Hotel Togo Palace" class="logo" />
 </h1>
+
 <!-- a barra de navegação nav bar foi obtido no site: https://materializecss.com/navbar.html Right Aligned Links -->
   <nav>
-    <!-- Para mudar a cor da barra de navegação foi adicionado (#ffab40 orange accent-2) do site https://materializecss.com/color.html  e o comando (style="text-align: left;) foi adicionado para alinhar o nome da barra de navegação:( Hotel Togo Palace) a esquerda-->
+  
+    <!-- Para mudar a cor da barra de navegação foi adicionado a paleta de cores (#ffab40 orange accent-2) do site https://materializecss.com/color.html  e o comando (style="text-align: left;) foi adicionado para alinhar o nome da barra de navegação:( Hotel Togo Palace) a esquerda-->
     <div class="nav-wrapper #ffab40 orange accent-2" style="text-align: left;">
       <a href="index.html" class="brand-logo">Hotel Togo Palace</a>
+
       <!--  Na barra de navegação foi adicionado o comando (right) para alinhar os nomes: Hotel, Suites, Gastronomia, Reservas e Localização a direita-->
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="hotel.html">Hotel</a></li>
@@ -49,13 +65,109 @@
   <img src="img/painel10.jpg" alt="area piscina" class="painel" />
     </header>
 
-    <main></main>
+    <main>
+    <h2>Suites</h2>
+    <!--<hr> espaços-->
+<hr> 
+<p>
 
+<!-- Texto abaixo (lorem*3) mais tab-->
+  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dicta natus facilis esse, dolor fugiat incidunt minima illo culpa enim velit cumque debitis atque nemo iure temporibus dolorem possimus laborum?</span>
+  <span>Expedita voluptas sapiente fugiat perspiciatis eius voluptatem voluptatum ipsam nobis! Ipsam maiores tenetur, nesciunt quae cupiditate similique laborum rem doloremque ratione, vitae tempore, sint voluptates aut amet et enim vero.</span>
+  <span>Maiores architecto esse cum eius laudantium? Vel nesciunt porro laudantium consectetur repellat quod in beatae quis animi obcaecati nemo sunt deleniti soluta, quibusdam labore officiis! Blanditiis distinctio magnam aut iure!</span>
+</p>
+  <hr>
+  <!-- Inicio dos cards-->  
+    
+    <div class="row"><!-- inicio da linha-->
+  <div class="col s12 m6">
+    <h2 class="header">Suite Master</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="img/suite6.jpg" class="modal-trigger" href="#modal1">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maiores magni ipsum error aut, quos asperiores, omnis quaerat, alias cupiditate totam mollitia doloremque iste laboriosam! Magni, eligendi. Iusto, dolorem molestias.</p>
+        </div>
+        <div class="card-action">
+          <a href="reservas.html">Reservar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="col s12 m6">
+    <h2 class="header">Suite Double</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="img/suite8.jpg" class="modal-trigger" href="#modal2">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maiores magni ipsum error aut, quos asperiores, omnis quaerat, alias cupiditate totam mollitia doloremque iste laboriosam! Magni, eligendi. Iusto, dolorem molestias.</p>
+        </div>
+        <div class="card-action">
+          <a href="reservas.html">Reservar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div> <!-- fim da linha-->
+    </main>
+
+<!--############################################# Área dos modais #############################################-->
+
+<!--  a estrutura modal foi obtido no link: https://materializecss.com/modals.html  modal-->
+<!-- Modal Structure1 -->
+
+<!-- "modal1" esta associado a "#modal1"  -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Suite Master</h4>
+      <img src="img/suite6.jpg" />
+    </div>
+    <div class="modal-footer">
+    <!-- Foi adicionado ao botão reservar o link reservas.html e class="modal-close waves-effect waves-green btn-flat"   gera o efeito de transição ao passar o  mouse em cima do botão reservar-->
+      <a href="reservas.html" class="modal-close waves-effect waves-green btn-flat">Reservar</a>
+    </div>
+  </div>
+
+  <!-- Modal2 Structure -->
+   <!-- o id foi alterado para modal2, pois está  associado a href="#modal2"-->
+    <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Suite Double</h4>
+      <img src="img/suite8.jpg" />
+    </div>
+    <div class="modal-footer">
+      <a href="reservas.html" class="modal-close waves-effect waves-green btn-flat">Reservar</a>
+    </div>
+  </div>
 
     <footer></footer>
 
+
+    <!-- O funcionamento do modal utilizando jquery necessita do script abaixo obtido  no site: https://developers.google.com/speed/libraries#jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
 <!--O link abaixo com o javascript foi obtido no  site:  (https://materializecss.com/getting-started.html) CDN -->
-     <!-- Compiled and minified JavaScript -->
+   <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!-- o script ( Initialization ) é obrigatório para o devido funcionamento do modal, e o script abaixo foi obtido no site   https://materializecss.com/modals.html Initialization
+     para funcionar em conjunto  com o script jQuery <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script>  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+
+  </script>
 </body>
+
+<!-- ######################################################## fim body#######################################-->
 </html>

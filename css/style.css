@@ -11,3 +11,49 @@ header .logo {
 header .painel {
     width:  100%;
 }
+
+#modal1 img {
+    width: 100%;
+    height: 310px;
+
+}
+
+#modal2 img {
+    width: 100%;
+    height: 310px;
+
+}
+
+
+.card-image img {
+
+    Cursor: pointer;
+}
+
+
+/* modal Salgados */
+#modal3 img {
+    width: 100%;
+    height: 310px;
+
+}
+
+
+/* modal Pães especiais */
+#modal4 img {
+    width: 100%;
+    height: 310px;
+}
+
+
+/* modal Salmão */
+#modal5 img {
+    width: 90%;
+    height: 310px;
+
+}
+
+/* modal Sushi */
+#modal6 img {
+    width: 100%;
+    height: 310px;
