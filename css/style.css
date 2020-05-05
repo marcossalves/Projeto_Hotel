@@ -1,0 +1,13 @@
+header {
+    text-align: center;
+}
+
+
+header .logo {
+    width: 10%;
+    height: auto;
+    
+}
+header .painel {
+    width:  100%;
+}
