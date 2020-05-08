@@ -31,6 +31,8 @@
     <!-- Para mudar a cor da barra de navegação foi adicionado (#ffab40 orange accent-2) do site https://materializecss.com/color.html  e o comando (style="text-align: left;) foi adicionado para alinhar o nome da barra de navegação:( Hotel Togo Palace) a esquerda-->
     <div class="nav-wrapper #ffab40 orange accent-2" style="text-align: left;">
       <a href="index.html" class="brand-logo">Hotel Togo Palace</a>
+            <!-- para a responsividade do site funcionar em celulares e smartphone é necessário adicionar a linha <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> do site https://materializecss.com/navbar.html  -->
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <!--  Na barra de navegação foi adicionado o comando (right) para alinhar os nomes: Hotel, Suites, Gastronomia, Reservas e Localização a direita-->
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="hotel.html">Hotel</a></li>
@@ -39,6 +41,22 @@
         <li><a href="reservas.html">Reservas</a></li>
         <li><a href="localizacao.html">Localização</a></li>
       </ul>
+
+      <!-- para a responsividade do site funcionar em celulares e smartphone é necessário adicionar a linha <ul class="sidenav" id="mobile-demo"> </ul> do site https://materializecss.com/navbar.html e depois será necessário adicionar os links do site          <li><a href="hotel.html">Hotel</a></li>
+        <li><a href="suites.html">Suites</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>  -->
+        <ul class="sidenav" id="mobile-demo">
+         <li><a href="hotel.html">Hotel</a></li>
+        <li><a href="suites.html">Suites</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>
+        </ul>
+        
     </div>
   </nav>
   <!-- Fim da barra de navegação-->
@@ -50,12 +68,24 @@
     </header>
 
     <main></main>
+<h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0438479367067!2d-46.66833818502266!3d-23.530925284697947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce581cad023787%3A0xc7f123a39d783222!2sSenac%20Francisco%20Matarazzo!5e0!3m2!1spt-PT!2sbr!4v1588967693715!5m2!1spt-PT!2sbr" width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<h2\>
+<hr />
 
 
     <footer></footer>
-
+<!-- O funcionamento do modal utilizando jquery necessita do script abaixo obtido  no site: https://developers.google.com/speed/libraries#jquery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
 <!--O link abaixo com o javascript foi obtido no  site:  (https://materializecss.com/getting-started.html) CDN -->
      <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- O script abaixo e de responsividade para o site se adequar automaticamente  a celulares e a outros dispositivos-->
+    <script>  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+        </script>
 </body>
 </html>

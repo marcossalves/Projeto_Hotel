@@ -31,6 +31,8 @@
     <!-- Para mudar a cor da barra de navegação foi adicionado (#ffab40 orange accent-2) do site https://materializecss.com/color.html  e o comando (style="text-align: left;) foi adicionado para alinhar o nome da barra de navegação:( Hotel Togo Palace) a esquerda-->
     <div class="nav-wrapper #ffab40 orange accent-2" style="text-align: left;">
       <a href="index.html" class="brand-logo">Hotel Togo Palace</a>
+      <!-- para a responsividade do site funcionar em celulares e smartphone é necessário adicionar a linha <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> do site https://materializecss.com/navbar.html  -->
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <!--  Na barra de navegação foi adicionado o comando (right) para alinhar os nomes: Hotel, Suites, Gastronomia, Reservas e Localização a direita-->
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="hotel.html">Hotel</a></li>
@@ -39,6 +41,20 @@
         <li><a href="reservas.html">Reservas</a></li>
         <li><a href="localizacao.html">Localização</a></li>
       </ul>
+<!-- para a responsividade do site funcionar em celulares e smartphone é necessário adicionar a linha <ul class="sidenav" id="mobile-demo"> </ul> do site https://materializecss.com/navbar.html e depois será necessário adicionar os links do site          <li><a href="hotel.html">Hotel</a></li>
+        <li><a href="suites.html">Suites</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>  -->
+        <ul class="sidenav" id="mobile-demo">
+         <li><a href="hotel.html">Hotel</a></li>
+        <li><a href="suites.html">Suites</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>
+        </ul>
     </div>
   </nav>
   <!-- Fim da barra de navegação-->
@@ -122,9 +138,19 @@ O <main> pode ser filho de uma ou mais divs. (Apenas divs ;)) https://developer.
 
 
     <footer></footer>
+    <!-- O funcionamento do modal utilizando jquery necessita do script abaixo obtido  no site: https://developers.google.com/speed/libraries#jquery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <!--O link abaixo com o javascript foi obtido no  site:  (https://materializecss.com/getting-started.html) CDN -->
      <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!-- O script abaixo e de responsividade para o site se adequar automaticamente  a celulares e a outros dispositivos-->
+    <script>  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+        </script>
+
+
 </body>
 </html>

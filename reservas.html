@@ -31,6 +31,8 @@
     <!-- Para mudar a cor da barra de navegação foi adicionado (#ffab40 orange accent-2) do site https://materializecss.com/color.html  e o comando (style="text-align: left;) foi adicionado para alinhar o nome da barra de navegação:( Hotel Togo Palace) a esquerda-->
     <div class="nav-wrapper #ffab40 orange accent-2" style="text-align: left;">
       <a href="index.html" class="brand-logo">Hotel Togo Palace</a>
+      <!-- para a responsividade do site funcionar em celulares e smartphone é necessário adicionar a linha <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> do site https://materializecss.com/navbar.html  -->
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <!--  Na barra de navegação foi adicionado o comando (right) para alinhar os nomes: Hotel, Suites, Gastronomia, Reservas e Localização a direita-->
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="hotel.html">Hotel</a></li>
@@ -39,6 +41,24 @@
         <li><a href="reservas.html">Reservas</a></li>
         <li><a href="localizacao.html">Localização</a></li>
       </ul>
+<!-- para a responsividade do site funcionar em celulares e smartphone é necessário adicionar a linha <ul class="sidenav" id="mobile-demo"> </ul> do site https://materializecss.com/navbar.html e depois será necessário adicionar os links do site          <li><a href="hotel.html">Hotel</a></li>
+        <li><a href="suites.html">Suites</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>  -->
+        <ul class="sidenav" id="mobile-demo">
+         <li><a href="hotel.html">Hotel</a></li>
+        <li><a href="suites.html">Suites</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>
+        </ul>
+
+
+
+      
     </div>
   </nav>
   <!-- Fim da barra de navegação-->
@@ -185,10 +205,70 @@
       </div>
 <hr/>
 
+
+
+<!--Terceira  linha do formulário-->
+      <div class="row">
+      <!-- tamanho da coluna alterado de s6 para s4-->
+        <div class="input-field col s4">
+        <!-- icone account_circle alterado para icone hotel-->
+        <i class="material-icons prefix">hotel</i>
+        <!-- o conteudo abaixo nao sera utilizado  
+          <input  id="nomecompleto" type="text" class="validate">
+          <label for="nomecompleto">Nome Completo</label>
+          -->
+<select class="icons">
+<!-- choose your option alterado para Escolha a sua suite-->
+      <option value="" disabled selected>Escolha a sua suite</option>
+      <option value="" data-icon="img/suite6.jpg">Suite Single</option>
+      <option value="" data-icon="img/suite8.jpg">Suite Double</option>
+      <option value="" data-icon="img/suite7.jpg">Suite Master</option>
+    </select>
+    <!--Images in select alterado para Selecione a suite-->
+    <label>Selecione a Suite</label>
+        </div>
+
+        <!-- a estrutura abaixo foi copiada da data do calendário, e espaço foi alterado para s4-->
+        <div class="input-field col s4">
+        <i class="material-icons prefix">date_range</i>
+          <input type="text" class="datepicker">
+          <!-- data de nascimento alterado para Check-in-->
+          <label for="Check-in">Check-in</label>
+        </div>
+
+        <!-- a estrutura abaixo foi copiada da data do calendário, e o espaço foi alterado para s4-->
+        <div class="input-field col s4">
+        <i class="material-icons prefix ">date_range</i>
+          <input type="text" class="datepicker">
+          <!-- data de nascimento alterado para Check-out-->
+          <label for="Check-out">Check-out</label>
+        </div>
+
+<!-- fim da terceira linha do formulário-->
+        
+
+<!--Conteudo abaixo não sera mais utilizado. o conteudo foi baixado de https://materializecss.com/select.html
+<div class="input-field col s12 m6">
+    <select class="icons">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="images/sample-1.jpg">example 1</option>
+      <option value="" data-icon="images/office.jpg">example 2</option>
+      <option value="" data-icon="images/yuna.jpg">example 3</option>
+    </select>
+    <label>Images in select</label>
+    -->
+  </div>
+<hr/>
+ 
+  <button class="btn waves-effect waves-light #ffab40 orange accent-2"  type="submit" name="action">Enviar
+    <i class=" material-icons right">check</i>
+  </button>
+        
       <!--Fim do formulário-->
     </form>
   </div>
 <!--Fim da área do formulário-->
+
     </main>
 
 
@@ -213,7 +293,7 @@
     <br>
     <br>
     <br>
-    <br>
+    
 
 
 <!-- O funcionamento do modal utilizando jquery necessita do script abaixo obtido  no site: https://developers.google.com/speed/libraries#jquery-->
@@ -230,6 +310,17 @@
   $(document).ready(function(){
     $('.datepicker').datepicker();
   });
-    </script>
+
+/* Scrip de inicialização abaixo e uma dependecia do select baixado em https://materializecss.com/select.html  */
+   $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+    /* O script abaixo e de responsividade para o site se adequar automaticamente  a celulares e a outros dispositivos */
+      $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  </script>
+
 </body>
 </html>
