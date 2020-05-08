@@ -150,10 +150,12 @@
 
        
         <div class="input-field col s3">
-        <i class="material-icons prefix">date_range</i>
+        <!--icone data_range alterado para people-->
+        <i class="material-icons prefix">people</i>
          <!-- Foi removido for="datanascimento" e a Data de Nascimento foi alterada para sexo-->
           <label>Sexo</label>
-        <label>
+          <!-- foi adicionado na label identificação id="sex_masculino" para personalizar via css -->
+        <label id="sex_masculino">
         <!-- "group1" alterado para sexo e checked alterado para value="M"-->
         <input name="sexo" type="radio" value="M" />
         <!--Red alterado para Masculino-->
@@ -161,7 +163,8 @@
       </label>
 
  <!--  conteudo abaixo foi copiado da label acima-->
-      <label>
+<!-- foi adicionado na label identificação id="sex_feminino" para personalizar via css -->
+      <label id="sex_feminino">
         <!-- "group1" alterado para sexo e checked alterado para value="F"-->
         <input name="sexo" type="radio" value="F" />
       
