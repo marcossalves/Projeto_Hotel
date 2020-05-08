@@ -57,3 +57,13 @@ header .painel {
 #modal6 img {
     width: 100%;
     height: 310px;
+}
+
+#sex_masculino, #sex_feminino {
+/* !important força a utilizar a regra do css ao inves do materialize*/
+margin-left: 100px !important;
+/* foi adiciona position: relative; pois inspecionamos o site e identificamos que  materialize esta utilizando position: absulote esta deixando as opções masculina e femininas sobrepostas*/
+
+position: relative;
+
+}

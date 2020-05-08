@@ -139,10 +139,10 @@
      
         <!-- col s6 possui 6 colunas, mas foi alterado  para col s3 contendo 3 colunas-->
         <div class="input-field col s3">
-        <!-- o icone perm_identity foi alterado para o icone date_range  https://materializecss.com/icons.html  -->
         <i class="material-icons prefix">date_range</i>
         <!-- "cpf" foi  alterado para "datadenascimento" -->
-          <input id="datanascimento" type="email" class="validate">
+<!--<input id="datanascimento" type="email" class="validate"> foi substituido por  <input type="text" class="datepicker"> para exibir calendário. conteudo baixado do site  https://materializecss.com/pickers.html  Date Picker e não podemos esquecer de adiciona a inicialização do Date Picker do jquery no final do body-->
+          <input type="text" class="datepicker">
           <label for="datanascimento">Data de Nascimento</label>
         </div>
 
@@ -154,6 +154,7 @@
         <i class="material-icons prefix">people</i>
          <!-- Foi removido for="datanascimento" e a Data de Nascimento foi alterada para sexo-->
           <label>Sexo</label>
+
           <!-- foi adicionado na label identificação id="sex_masculino" para personalizar via css -->
         <label id="sex_masculino">
         <!-- "group1" alterado para sexo e checked alterado para value="M"-->
@@ -166,7 +167,7 @@
 <!-- foi adicionado na label identificação id="sex_feminino" para personalizar via css -->
       <label id="sex_feminino">
         <!-- "group1" alterado para sexo e checked alterado para value="F"-->
-        <input name="sexo" type="radio" value="F" />
+        <input name="sexo" type="radio" value="F"/>
       
         <!-- Masculino alterado para feminino-->
         <span>Feminino</span>
@@ -182,7 +183,7 @@
 
         <!--fim da segunda linha do formulário-->
       </div>
-
+<hr/>
 
       <!--Fim do formulário-->
     </form>
@@ -214,8 +215,21 @@
     <br>
     <br>
 
+
+<!-- O funcionamento do modal utilizando jquery necessita do script abaixo obtido  no site: https://developers.google.com/speed/libraries#jquery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
 <!--O link abaixo com o javascript foi obtido no  site:  (https://materializecss.com/getting-started.html) CDN -->
      <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+ 
+
+    <script>
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+    </script>
 </body>
 </html>
