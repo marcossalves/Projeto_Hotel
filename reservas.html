@@ -49,10 +49,167 @@
   <img src="img/painel10.jpg" alt="area piscina" class="painel" />
     </header>
 
-    <main></main>
+    <main>
+    <!---->
+    <h2> Faça a sua reserva</h2>
+    <!--  (hr) Linha horizontal de uma ponta a outra-->
+    <hr>
+    
+<!--o conteúdo do formulário abaixo foi baixado em https://materializecss.com/text-inputs.html forms Input fields-->
+ <!--Inicio da área do formulário-->
+ <div class="row">
+ <!--Início do formulário-->
+    <form class="col s12">
+    <!--primeira linha do formulário-->
+      <div class="row">
+        <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <!-- A linha abaixo <input placeholder="Placeholder" id="first_name" type="text" class="validate"> foi alterada para exibir o efeito de subir na primeira linha do nome -->
+          <!--"first_name" alterado para "nomecompleto"-->
+          <input  id="nomecompleto" type="text" class="validate">
+          <label for="nomecompleto">Nome Completo</label>
+        </div>
+
+ <!--"last_name" alterado para "nomecompleto"-->
+        <div class="input-field col s6">
+        <!-- Adicionamos um icone antes do nome,  copiado o comando <i class="material-icons prefix">account_circle</i>  do site https://materializecss.com/text-inputs.html Icon Prefixes e trocamos o icone  prefix account_circle para  prefix email baixado em https://materializecss.com/icons.html  -->
+        <i class="material-icons prefix">email</i>
+          <input id="email" type="email" class="validate">
+          <label for="email">E-Mail</label>
+        </div>
+        <!--fim da primeira linha do formulário-->
+      </div>
+    
+
+   <!-- #############O restante abaixo do formulário não será utilizado 
+      <div class="row">
+        <div class="input-field col s12">
+          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          <label for="disabled">Disabled</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          This is an inline input field:
+          <div class="input-field inline">
+            <input id="email_inline" type="email" class="validate">
+            <label for="email_inline">Email</label>
+            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+          </div>
+        </div>
+      </div>
+-->
+
+
+
+      <!-- Segunda  linha do formulário ( a estrutura  da primeira linha foi copiada para criar a estrutura da segunda linha, mas será modificada) -->
+      <div class="row">
+      <!-- col s6 possui 6 colunas, mas foi alterado  para col s3 contendo 3 colunas-->
+        <div class="input-field col s3">
+        <!--O icone "account_circle" foi altera para "local_phone"  -->
+        <i class="material-icons prefix">local_phone</i>
+        <!-- A linha abaixo <input placeholder="Placeholder" id="first_name" type="text" class="validate"> foi alterada para exibir o efeito de subir na primeira linha do nome -->
+          <!-- "nomecompleto" foi  alterado para "telefone" -->
+          <input  id="telefone" type="text" class="validate">
+          <label for="telefone">Telefone</label>
+        </div>
+
+
+  <!-- col s6 possui 6 colunas, mas foi alterado  para col s3 contendo 3 colunas-->
+        <div class="input-field col s3">
+        <!-- o icone e-mail foi alterado para o icone  https://materializecss.com/icons.html  -->
+        <i class="material-icons prefix">perm_identity</i>
+        <!-- "email" foi  alterado para "cpf" -->
+          <input id="cpf" type="email" class="validate">
+          <label for="cpf">CPF</label>
+        </div>
+
+     
+        <!-- col s6 possui 6 colunas, mas foi alterado  para col s3 contendo 3 colunas-->
+        <div class="input-field col s3">
+        <!-- o icone perm_identity foi alterado para o icone date_range  https://materializecss.com/icons.html  -->
+        <i class="material-icons prefix">date_range</i>
+        <!-- "cpf" foi  alterado para "datadenascimento" -->
+          <input id="datanascimento" type="email" class="validate">
+          <label for="datanascimento">Data de Nascimento</label>
+        </div>
+
+
+
+       
+        <div class="input-field col s3">
+        <i class="material-icons prefix">date_range</i>
+         <!-- Foi removido for="datanascimento" e a Data de Nascimento foi alterada para sexo-->
+          <label>Sexo</label>
+        <label>
+        <!-- "group1" alterado para sexo e checked alterado para value="M"-->
+        <input name="sexo" type="radio" value="M" />
+        <!--Red alterado para Masculino-->
+        <span>Masculino</span>
+      </label>
+
+ <!--  conteudo abaixo foi copiado da label acima-->
+      <label>
+        <!-- "group1" alterado para sexo e checked alterado para value="F"-->
+        <input name="sexo" type="radio" value="F" />
+      
+        <!-- Masculino alterado para feminino-->
+        <span>Feminino</span>
+      </label>
+        
+        </div>
+
+
+
+<!-- O conteudo label foi copiado link https://materializecss.com/radio-buttons.html e depois foi incorporado  -->
+
+        
+
+        <!--fim da segunda linha do formulário-->
+      </div>
+
+
+      <!--Fim do formulário-->
+    </form>
+  </div>
+<!--Fim da área do formulário-->
+    </main>
 
 
     <footer></footer>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 <!--O link abaixo com o javascript foi obtido no  site:  (https://materializecss.com/getting-started.html) CDN -->
      <!-- Compiled and minified JavaScript -->
